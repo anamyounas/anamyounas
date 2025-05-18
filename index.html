@@ -4,10 +4,117 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Anam Younas | Portfolio</title>
+  <style>
+    /* Reset & base */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+    a { color: #0066cc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Layout */
+    header, section, footer { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+    header { text-align: center; }
+    nav { margin-top: 1rem; }
+    nav a { margin: 0 .5rem; }
+
+    /* Hero */
+    .hero { padding: 4rem 0; }
+    .hero h1 { font-size: 2.5rem; margin-bottom: .5rem; }
+    .hero p  { font-size: 1.2rem; color: #555; }
+
+    /* Sections */
+    section h2 { font-size: 1.8rem; margin-bottom: .75rem; border-bottom: 2px solid #eee; padding-bottom: .25rem; }
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; }
+    .project { border: 1px solid #ddd; border-radius: 6px; padding: 1rem; }
+    .project h3 { margin-bottom: .5rem; }
+    .project p { font-size: .95rem; margin-bottom: .75rem; }
+
+    /* Services */
+    .services-list { list-style: disc inside; }
+    .services-list li { margin-bottom: .5rem; }
+
+    /* Contact */
+    .contact-list { list-style: none; }
+    .contact-list li { margin-bottom: .5rem; }
+
+    /* Footer */
+    footer { text-align: center; font-size: .9rem; color: #777; margin-top: 3rem; }
+  </style>
 </head>
 <body>
-  <h1>Anam Younas</h1>
-  <p>Professional Content Writer & ICT Educator</p>
-  <!-- Add more sections: About, Projects, Contact, etc. -->
+
+  <header class="hero">
+    <h1>Anam Younas</h1>
+    <p>Professional Content Writer &amp; Passionate ICT Educator</p>
+    <nav>
+      <a href="#about">About</a> |
+      <a href="#projects">Projects</a> |
+      <a href="#services">Services</a> |
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a content writer and ICT educator based in Lahore, Pakistan. With over 5 years of experience
+      crafting engaging copy and teaching digital skills, I help businesses and students tell
+      compelling stories through words and code.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>AI Content Recommender</h3>
+        <p>A web app that uses ML algorithms to suggest articles based on user reading habits.</p>
+        <a href="https://github.com/anamyounas/ai-recommender" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project">
+        <h3>Responsive E-Commerce Theme</h3>
+        <p>A mobile-first HTML/CSS template for online stores, complete with product grid and navbar.</p>
+        <a href="https://github.com/anamyounas/ecommerce-template" target="_blank">View on GitHub</a>
+      </div>
+      <!-- Add more project cards as needed -->
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <ul class="services-list">
+      <li>Synopsis</li>
+      <li>Thesis</li>
+      <li>Assignments</li>
+      <li>Dissertations</li>
+      <li>Research Proposals</li>
+      <li>Plagiarism Removal</li>
+      <li>AI Removal</li>
+      <li>RAP Files</li>
+      <li>Website Content Writing</li>
+      <li>Website Development (Static &amp; Dynamic)</li>
+      <li>SEO Based Content Writing</li>
+    </ul>
+    <p>
+      For all academic programs (BS, MS/M.Phil, PhD) and medical sciences, covering all subjects.
+      Feel free to reach out! I’ll provide high-quality writing at reasonable prices. Let me help you
+      put your thoughts into words.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <ul class="contact-list">
+      <li>Phone: <a href="tel:+923366900406">0336-6900406</a></li>
+      <li>Email: <a href="mailto:anamyounasapsmsg@gmail.com">anamyounasapsmsg@gmail.com</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/anam-younas?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">anam-younas</a></li>
+      <li>Location: Lahore, Pakistan</li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; 2025 Anam Younas. All rights reserved.
+  </footer>
+
 </body>
 </html>
