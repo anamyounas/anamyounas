@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;400&display=swap');
+/* Make every paragraph fully justified */
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
 
 :root {
   --color-bg: #f9f9f9;
